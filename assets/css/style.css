@@ -113,7 +113,7 @@ h1, h2 {
   position: absolute;
   bottom: 20px;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 0;
   font-weight: 400;
   font-size: 20px;
@@ -122,6 +122,10 @@ h1, h2 {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
+}
+/****Contact Page Styling*****/
+form {
+	width: 100%;
 }
 
 /*****Footer Styling****/
@@ -146,23 +150,28 @@ footer {
 	
 }
 @media screen and (max-width: 768px) {
-	header {
+	body header {
 		width: 100%}
 	#name {
 		float: left;
 		width: 150px;
 		margin-left: 12px;
 	}
+	.page_body {
+		width: 100%;
+	}
 	.page_content {
 		position: static;
 		margin: auto;
 		clear: both;
+		width: 95%;
 	}
 	#connect {
 		position: static;
 		align-content: left;
 		margin: auto;
 		clear: both;
+		width: 95%;
 	}
 	/****Index Page Styling****/
 	#prof_pic {
@@ -173,6 +182,13 @@ footer {
 	#prof_text {
 		position: relative;
 	}
+	/****Portfolio Page Styling****/
+	.work {
+		align-content: center;
+	}
+	.work_image {
+		box-sizing: content-box;
+	}	
 	
 }
 
@@ -222,12 +238,13 @@ footer {
 	}
 	/****contact page styling****/
 	.contact_form {
-		box-sizing: content-box;
 		width: 100%;
 	}
 	form {
-		box-sizing: content-box;
-		width: 50%;
+		width: 240px;
+	}
+	textarea {
+		width: inherit;
 	}
 	/****index page styling*****/
 	#prof_pic {
@@ -244,7 +261,17 @@ footer {
 	.work {
 		align-content: center;
 		padding: 10px;
+		width: inherit;
+	}
 	}	
+	h3 {
+		width: inherit;
+		padding: 0px;
+		position: relative;
+		font-size: small;
+		display: inline;
+	}
+
 	
 }
 
