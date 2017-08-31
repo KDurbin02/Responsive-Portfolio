@@ -1,6 +1,6 @@
 /** CSS Page for first hw assignment**/
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 body {
 	background-image: url(../images/organic-tiles.png);
@@ -18,16 +18,17 @@ header {
 	margin: 0px 0px 20px 0px;
 	background: #FFFFFF;
 	border: 1px solid #cccccc;
-	padding: 30px 30px 15px 30px;
+	padding: 0px 30px 15px 30px;
 	}
 	
 #name {
 	position: relative;
 	float: left;
+	height: 80px;
 	border: 1px solid #cccccc;
 	right-margin: 50px;
 	padding: 30px;
-	background: #4aaaa5;
+	background: #4aaaa5 ;
 	font-size: 24px;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	color: #FFFFFF;
@@ -92,58 +93,159 @@ h1, h2 {
 }
 
 /*****Portfolio Page Styling*****/
-table, th, td {
-   border: 38px solid white;
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
 }
-.table {
-	float: left;
-  	position: relative;
+
+.work:nth-child(even) {
+  margin-right: 40px;
 }
-.table_text {
-	position: absolute;
-	bottom: 20px;
-	left: 0px;
-	width: 100%;
-	text-align: center;
-	color: white;
-	font-size: 20px;
-	background-color: #4aaaa5;
+
+.work img {
+  width: 100%;
+  border: 0 none;
+}
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
 
 /*****Footer Styling****/
 footer {
 	clear: both;	
 	width: 100%; 
-	height: 50px;
+	height: 40px;
 	padding: 32px 10px;
 	background-color: #666666;
 	color: #ffffff;
 	font-size: x-small;
 	text-align: center;
+	border-top: 10px solid #4aaaa5;
 	}
 
+
 @media screen (max-width: 980px) {
+	header {
+		width: 100%
+	}
 	
 	
 }
-
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
+	header {
+		width: 100%}
+	#name {
+		float: left;
+		width: 150px;
+		margin-left: 12px;
+	}
+	.page_content {
+		position: static;
+		margin: auto;
+		clear: both;
+	}
+	#connect {
+		position: static;
+		align-content: left;
+		margin: auto;
+		clear: both;
+	}
+	/****Index Page Styling****/
+	#prof_pic {
+		float: left;
+		width: 200px;
+		height: 150px;
+	}
+	#prof_text {
+		position: relative;
+	}
 	
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
+	/****basic page styling****/
 	header {
 		padding: 0px 0px 10px 0px;
+		margin-bottom: 40px;
 	}
 	#name {
 		position: static;
 		clear: both;
+		margin: auto;
 		width: 100%;
 		text-align: center;
 	}
-	#navigation {
+	.navigation {
 		position: static;
-		padding: 0px;
+		padding: 10px;
+		background: #ffffff;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10px;
 	}
+	ul {
+		text-align: center;
+	}
+	.page_body {
+		position: relative;
+		width: 100%;
+		clear: both;
+	}
+	.page_content{
+		clear: both;
+		position: static;
+		width: 95%;
+		margin: 10px;
+		align-content: center;
+
+	}
+
+	#connect {
+		position: static;
+		width: 95%;
+		align-content: center;
+		margin: 10px;
+	}
+	/****contact page styling****/
+	.contact_form {
+		box-sizing: content-box;
+		width: 100%;
+	}
+	form {
+		box-sizing: content-box;
+		width: 50%;
+	}
+	/****index page styling*****/
+	#prof_pic {
+		clear: both;
+		position: static;
+		height: 180px;
+		align-content: center;
+	}
+	#prof_text {
+		position:static;
+		font-size: small;
+		line-height: 20px; }
+	/****Portfolio Page Styling****/
+	.work {
+		align-content: center;
+		padding: 10px;
+	}	
 	
 }
+
+
