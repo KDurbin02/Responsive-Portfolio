@@ -146,11 +146,36 @@ footer {
 	}
 
 
-@media screen (max-width: 980px) {
-	header {
+@media screen and (max-width: 980px) {
+	body header {
 		width: 100%
 	}
-	
+	#name {
+		float: left;
+		margin-left: 45px;
+	}
+	.page_content {
+		width: 400px;
+		float: left;
+		margin-left: 75px;
+	}
+	#connect {
+		width: 250px;
+		float: left;
+		position: relative;
+		margin-right: 75px;
+	}
+	#prof_pic {
+		display: block;
+		width: 340px;
+	}
+	#prof_text {
+		display: block;
+	}
+	.work {
+		align-content: center;
+		margin: 30px;
+	}
 	
 }
 @media screen and (max-width: 768px) {
@@ -158,30 +183,30 @@ footer {
 		width: 100%}
 	#name {
 		float: left;
-		width: 150px;
-		margin-left: 12px;
+		width: 200px;
+		text-align: center;
 	}
 	.page_body {
 		width: 100%;
 	}
 	.page_content {
 		position: static;
-		margin: auto;
+		margin: 10px;
 		clear: both;
 		width: 95%;
 	}
 	#connect {
 		position: static;
 		align-content: left;
-		margin: auto;
+		margin: 10px;
 		clear: both;
 		width: 95%;
 	}
 	/****Index Page Styling****/
 	#prof_pic {
 		float: left;
-		width: 200px;
-		height: 150px;
+		width: 210px;
+		height: 200px;
 	}
 	#prof_text {
 		position: relative;
@@ -269,11 +294,10 @@ footer {
 	}
 	}	
 	h3 {
-		width: inherit;
-		padding: 0px;
 		position: relative;
 		font-size: small;
-		display: inline;
+		right: 0px;
+
 	}
 
 	
